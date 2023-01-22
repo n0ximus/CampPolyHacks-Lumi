@@ -15,6 +15,7 @@ let posts = [
     "TW": false 
     },
 
+
 ]
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
         <>
             <div className="home">
                 <PostMap posts={posts} />
+
             </div>
         </>
     )
