@@ -3,7 +3,8 @@ import { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx"
 import NavBar from "./components/navbar"
-import WritePost from "./pages/writePost/writePost";
+import WritePraise from "./pages/writePost/writePraise";
+import WriteRant from "./pages/writePost/writeRant";
 
 function App() {
   document.body.style = 'background: #31334A;';
@@ -16,7 +17,9 @@ function App() {
                   <Routes>
                       <Route exact path="/" element={<Home />}>
                       </Route>
-                      <Route exact path="/writePost" element={<WritePost />}>
+                      <Route exact path="/writePraise" element={<WritePraise />}>
+                      </Route>
+                      <Route exact path="/writeRant" element={<WriteRant />}>
                       </Route>
                   </Routes>
               </Router>

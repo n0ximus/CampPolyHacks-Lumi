@@ -1,8 +1,8 @@
-import "./writePost.css"
+import "./writePraise.css"
 import { useContext, useState } from "react";
 import axios from "axios";
 
-export default function WritePost() {
+export default function WritePraise() {
     const [description, setDescription] = useState("");
     /* create a new post */
     const handleSubmit = async (e) => {
