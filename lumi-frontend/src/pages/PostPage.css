@@ -1,14 +1,23 @@
+.postPageDiv {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
 .commentRantBlock{
     width: 50%;
-    margin: 0px 25px 15px 25px;
     display: flex;
     background-color: #B8CAFF;
     border-radius: 10px;
-    align-items: center;
+    align-items: left;
     border: 8px solid #6C83CA;
 }
 
-.commentBox{
+.postSummaryDiv{
     background-color: #F5F5F5;
     border-radius: 10px;
     width: 95%;
@@ -69,4 +78,22 @@
 .tags {
     display: flex;
     margin-top: 15px;
+}
+
+.commentsHeader {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    text-align: left;
+}
+
+.writeCommentInput {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.commentInputDiv {
+    margin-right: 20px;
 }
