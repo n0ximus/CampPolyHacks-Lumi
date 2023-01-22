@@ -1,14 +1,73 @@
 
-
-.postPage{
-    background-color: #171C28
+.commentRantBlock{
+    width: 50%;
+    margin: 0px 25px 15px 25px;
+    display: flex;
+    background-color: #B8CAFF;
+    border-radius: 10px;
+    align-items: center;
+    border: 8px solid #6C83CA;
 }
 
-.commentBlock{
-    border-radius: 25px;
-    border: 4px solid #6C83CA;
-    padding: 4%;
-    margin-left: 30%;
-    margin-right: 30%;
+.commentBox{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 95%;
 }
 
+.postSummary {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    color: #46374d;
+    padding: 10px;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: flex;
+}
+
+
+.postDate {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+    color: #46374d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.postInfo {
+    align-items: center;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.stardust {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    padding: 20px;
+}
+
+.arrowUp {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #FFE48F;
+    margin-bottom: 5px;
+  }
+
+.arrowDown {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 25px solid #FFE48F;
+    margin-top: 5px;
+}
+
+.tags {
+    display: flex;
+    margin-top: 15px;
+}
