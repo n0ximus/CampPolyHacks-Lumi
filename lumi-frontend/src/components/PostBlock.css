@@ -1,19 +1,25 @@
 .postBlock {
-    width: 100%;
+    width: 50%;
     margin: 0px 25px 15px 25px;
     display: flex;
     background-color: #B8CAFF;
     border-radius: 10px;
     align-items: center;
+    border: 8px solid #6C83CA;
 }
 
 .blur {
     display: flex;
     filter: blur(4px);
+    width: 100%;
+    margin-right: 30px;
 }
 
 .noBlur {
     display: flex;
+    width: 100%;
+    margin-right: 30px;
+
 }
 
 .postSummary {
@@ -22,10 +28,10 @@
     font-family: 'Helvetica';
     font-weight: 300;
     color: #46374d;
-    padding: 5px;
+    padding: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align: center;
+    text-align: left;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -34,7 +40,7 @@
 .postSummaryDiv {
     background-color: #F5F5F5;
     border-radius: 10px;
-    margin: 5px;
+    width: 100%;
 }
 
 
@@ -59,13 +65,14 @@ hr {
 
 .postInfo {
     align-items: center;
-
+    margin-left: 5px;
+    width: 100%;
 }
 
 .stardust {
     font-family: 'Helvetica';
     font-size: 18px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .arrowUp {
@@ -88,4 +95,5 @@ hr {
 
 .tags {
     display: flex;
+    margin-top: 15px;
 }
