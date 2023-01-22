@@ -1,0 +1,27 @@
+.commentBlock {
+    
+    width: 50%;
+    margin: 10px 25px 15px 25px;
+    display: flex;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5;
+    align-items: center;
+    padding-left: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.commentBody {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+.commentStar {
+    cursor: pointer;
+    font-size: 32px;
+    color: #F79A34;
+}
