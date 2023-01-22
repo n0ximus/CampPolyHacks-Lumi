@@ -23,6 +23,11 @@ const PostSchema = new mongoose.Schema(
             required: true,
             default: false,
         },
+        isRant: {
+            type: Boolean,
+            required: true,
+            default: true,
+        },
     },
     { timestamps: true }
 );
