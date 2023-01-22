@@ -1,0 +1,80 @@
+.navTop {
+    background-color: #171C28;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    margin-bottom: 20px;
+    display:flex;
+    font-family: "Poppins";
+}
+.navCenter {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.moon,.sun {
+    padding-inline-end: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.moon.button{
+    color:#6C83CA;
+    font-size:32px;
+}
+.sun.button{
+    color:#F79A34;
+    font-size:32px;
+}
+.moon.vent, .sun.praise {
+    color:#ffffff;
+    font-family: "Poppins";
+}
+
+.navLeft {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2%;
+    cursor: pointer;
+}
+.navLogoImg {
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+}
+.navLogoTxt {
+    color:#ffffff;
+    font-size: 24;
+    padding-left: 15px;
+    font-family: "Poppins";
+}
+.navRight {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2%;
+}
+
+.navRightItems {
+    display: flex;
+    list-style: none;
+}
+
+.navRightIcon {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+.navRightIcon.settings {
+    color:#FFE895;
+}
+.navRightIcon.mail {
+    color:#77A9F4;
+}
+.navRightIcon.user {
+    color:#E7ECFF;
+}
