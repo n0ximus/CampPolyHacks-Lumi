@@ -4,22 +4,28 @@ import Tag from "./Tag";
 
 export default function PostBlock({ post }) {
     return (
-        <div className="postBlock">
+        <div className={post.isRant ? "postBlock" : "postBlockPraise"}>
             <div className={post.TW ? "blur" : "noBlur"}>
                 <div className="stardust">
-                    <div class="arrowUp"></div>
+                    <div class={post.isRant ? "arrowUp" : "arrowUpPraise"}></div>
                     {post.starDust}
-                    <div class="arrowDown"></div>
+                    <div class={post.isRant ? "arrowDown" : "arrowDownPraise"}></div>
                 </div>
                 <div className="postInfo">
                     <div className="tags">
                         {post.categories.map((c) => (
-                        <Tag category={c} />
+                        <Tag category={c} isRant={post.isRant} />
                     ))}
                     </div>
                     <div className="postSummaryDiv">
                         <p className="postSummary">{post.body}</p>
                     </div>
+                    <div className="commentsButtonDiv">
+                        <Link to="/Home" className="commentsButton"> 
+                            See comments 
+                        </Link>
+                    </div>
+
                 </div>
             </div>
 

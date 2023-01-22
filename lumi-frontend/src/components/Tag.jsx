@@ -1,8 +1,8 @@
 import "./Tag.css"
 
-export default function Tag({ category }) {
+export default function Tag({ category, isRant }) {
   return (
-    <div className="tag">
+    <div className={isRant ? "tag" : "tagPraise"}>
       ★ {category}
     </div>
   )
