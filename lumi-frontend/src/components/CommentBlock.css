@@ -1,0 +1,20 @@
+.commentBlock {
+    
+    width: 50%;
+    margin: 10px 25px 15px 25px;
+    display: center;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    padding: 5;
+    align-items: center;
+    
+}
+
+.commentBody {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+}
+
