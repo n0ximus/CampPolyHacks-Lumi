@@ -8,12 +8,12 @@ export default function PostBlock({ post }) {
             <div className={post.TW ? "blur" : "noBlur"}>
                 <div className="stardust">
                     <div class="arrowUp"></div>
-                    {post.stardust}
+                    {post.starDust}
                     <div class="arrowDown"></div>
                 </div>
                 <div className="postInfo">
                     <div className="tags">
-                    {post.category.map((c) => (
+                        {post.categories.map((c) => (
                         <Tag category={c} />
                     ))}
                     </div>
