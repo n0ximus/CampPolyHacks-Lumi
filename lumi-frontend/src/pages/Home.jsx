@@ -2,6 +2,7 @@ import React from "react"
 import "./Home.css"
 import { useLocation } from "react-router";
 import { useEffect, useState } from "react";
+import CommentMap from "../components/CommentMap";
 import PostMap from "../components/PostMap"
 import axios from "axios";
 
@@ -19,6 +20,7 @@ export default function Home() {
     return (
         <>
             <div className="home">
+
                 <PostMap posts={posts} />
 
             </div>
