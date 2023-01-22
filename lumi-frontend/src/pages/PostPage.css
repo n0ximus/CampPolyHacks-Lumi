@@ -7,14 +7,20 @@
     height: 100%;
     margin-top: 100px;
 }
-
-.commentRantBlock{
+.writeCommentButton {
+    font-family: 'Merriweather', serif;
+    background-color: #FFE48F;
+    border-radius: 10px;
+    margin-top: 4px;
+    border: 2px solid #F79A34;
+}
+.commentRantBlock {
     width: 50%;
     display: flex;
     background-color: #B8CAFF;
     border-radius: 10px;
     align-items: left;
-    border: 8px solid #6C83CA;
+    border:8px solid #6C83CA;
 }
 
 .postSummaryDiv{
