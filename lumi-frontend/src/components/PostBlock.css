@@ -1,0 +1,113 @@
+.postBlock {
+    width: 50%;
+    margin: 0px 25px 15px 25px;
+    display: flex;
+    background-color: #B8CAFF;
+    border-radius: 10px;
+    border: 8px solid #6C83CA;
+}
+
+.postBlockPraise {
+    width: 50%;
+    margin: 0px 25px 15px 25px;
+    display: flex;
+    background-color: #FFE895;
+    border-radius: 10px;
+    align-items: center;
+    border: 8px solid #F79A34;
+}
+
+.blur {
+    display: flex;
+    filter: blur(4px);
+    width: 100%;
+    margin-right: 30px;
+}
+
+.noBlur {
+    display: flex;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.postSummary {
+    font-size: 18px;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    color: #46374d;
+    padding: 10px;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin: 0px;
+}
+
+.postSummaryDiv {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.postInfo {
+    margin-left: 5px;
+    width: 100%;
+}
+
+.commentsButtonDiv {
+    display: flex;
+    align-items: left;
+}
+
+.commentsButton {
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Helvetica';
+}
+
+.stardust {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    padding: 20px;
+}
+
+.arrowUp {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #FFE48F;
+    margin-bottom: 5px;
+  }
+
+.arrowUpPraise {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #6C83CA;
+    margin-bottom: 5px;
+  }
+
+.arrowDownPraise {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 25px solid #6C83CA;
+    margin-top: 5px;
+}
+
+.arrowDown {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 25px solid #FFE48F;
+    margin-top: 5px;
+}
+
+.tags {
+    display: flex;
+    margin-top: 15px;
+}
