@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-              <Router>
+              <Router>git 
                   <Routes>
                       <Route exact path="/" element={<Home />}> </Route>
                       <Route exact path="/home" element={<PostPage post = {post}/>}>
