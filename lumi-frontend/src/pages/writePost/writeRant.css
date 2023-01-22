@@ -1,6 +1,7 @@
 .writePost {
     padding: 20px;
     background: #31334A;
+    text-decoration: none !important;
 }
 
 .writePostType {
@@ -18,7 +19,9 @@
     margin: auto;
     margin-bottom: 20px;
 }
-
+.link {
+    text-decoration: none;
+}
 .writePostInput {
     padding: 20px;
     width: 700px;

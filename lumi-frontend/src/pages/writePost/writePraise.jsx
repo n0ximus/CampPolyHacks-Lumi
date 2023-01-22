@@ -27,30 +27,30 @@ export default function WritePraise() {
     };
     return (
         <>
-            <div className="writePost">
-                <div className="writePostType">
+            <div className="writePraise">
+                <div className="writePraiseType">
                     
                     
-                    <p className="writePostTitle">
+                    <p className="writePraiseTitle">
                         write praise
                     </p>
-                    <div className="writePostIcon">
+                    <div className="writePraiseIcon">
                         <i className="fa-solid fa-sun"></i>
                     </div>
                 </div>
-                <form className="writePostForm" onSubmit={handleSubmit}>
+                <form className="writePraiseForm" onSubmit={handleSubmit}>
 
-                    <textarea type="text" placeholder="write praise" className="writePostInput" autoFocus={true} onChange={e => setDescription(e.target.value)} />
+                    <textarea type="text" placeholder="write praise" className="writePraiseInput" autoFocus={true} onChange={e => setDescription(e.target.value)} />
 
 
-                <div className="writePostFooter">
-                    <div className="writePostTags">
+                <div className="writePraiseFooter">
+                    <div className="writePraiseTags">
                         Tags
                     </div>
-                    <div className="writePostTriggerWarning">
+                    <div className="writePraiseTriggerWarning">
                         TW
                     </div>
-                        <button className="writePostButton" type="submit">
+                        <button className="writePraiseButton" type="submit">
                         Post
                     </ button>
 

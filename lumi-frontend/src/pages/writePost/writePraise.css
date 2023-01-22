@@ -1,9 +1,9 @@
-.writePost {
+.writePraise {
     padding: 20px;
     background: #31334A;
 }
 
-.writePostType {
+.writePraiseType {
     background: #FFE895;
     border: 4px solid #F79A34;
     border-radius: 10px;
@@ -19,7 +19,11 @@
     margin-bottom: 20px;
 }
 
-.writePostInput {
+.link {
+    text-decoration: none;
+}
+
+.writePraiseInput {
     padding: 20px;
     width: 700px;
     height: 300px;
@@ -31,7 +35,7 @@
     border: 4px solid #171C28;
 }
 
-.writePostFooter {
+.writePraiseFooter {
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -40,7 +44,7 @@
     margin: auto;
 }
 
-.writePostTags {
+.writePraiseTags {
     border: 4px solid #171C28;
     border-radius: 10px;
     background-color: #F5FDFF;
@@ -50,7 +54,7 @@
     font-size: 24px;
 }
 
-.writePostTriggerWarning {
+.writePraiseTriggerWarning {
     border: 4px solid #171C28;
     border-radius: 10px;
     background-color: #F5FDFF;
@@ -60,7 +64,7 @@
     font-size: 24px;
 }
 
-.writePostButton {
+.writePraiseButton {
     border: 4px solid #171C28;
     border-radius: 10px;
     background-color: #F5FDFF;

@@ -11,9 +11,10 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar/>
       <header className="App-header">
               <Router>
+                  <NavBar />
+
                   <Routes>
                       <Route exact path="/" element={<Home />}>
                       </Route>
