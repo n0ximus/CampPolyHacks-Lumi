@@ -3,7 +3,9 @@ import { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx"
 import NavBar from "./components/navbar"
-import WritePost from "./pages/writePost/writePost";
+import WritePraise from "./pages/writePost/writePraise";
+import WriteRant from "./pages/writePost/writeRant";
+=======
 import PostPage from "./pages/PostPage.jsx"
 let post =
   { "body": "hello world i am typing to make this have a new line so we can see what it looks like when you're able to go to new lines and stuff", 
@@ -17,14 +19,17 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar/>
       <header className="App-header">
               <Router>
+                  <NavBar />
+
                   <Routes>
                       <Route exact path="/" element={<Home />}> </Route>
                       <Route exact path="/home" element={<PostPage post = {post}/>}>
                       </Route>
-                      <Route exact path="/writePost" element={<WritePost />}>
+                      <Route exact path="/writePraise" element={<WritePraise />}>
+                      </Route>
+                      <Route exact path="/writeRant" element={<WriteRant />}>
                       </Route>
                   </Routes>
               </Router>
