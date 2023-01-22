@@ -4,8 +4,8 @@ import { useLocation } from "react-router";
 import { useEffect, useState } from "react";
 import PostMap from "../components/PostMap"
 let posts = [
-    { "body": "hello world" },
-    { "body": "hello edde" },
+    { "body": "hello world", "stardust": 10, "category": ["advice", "lgbtq+"] },
+    { "body": "hello edde", "stardust": 5, "category": ["disability"] },
 
 ]
 export default function Home() {

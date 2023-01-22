@@ -3,17 +3,16 @@
     margin: 0px 25px 15px 25px;
     display: flex;
     background-color: #B8CAFF;
-    font-family: 'Merriweather', serif;
-    flex-direction: column;
+    border-radius: 10px;
 }
 
-.postBody {
-    font-size: 15px;
+.postSummary {
+    font-size: 18px;
     line-height: 25px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Helvetica';
     font-weight: 300;
     color: #46374d;
-    margin-top: 1px;
+    padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
@@ -22,25 +21,10 @@
     -webkit-box-orient: vertical;
 }
 
-
-.postTitle {
-    font-family: 'Merriweather', serif;
-    font-size: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.postCat {
-    font-family: 'Merriweather', serif;
-    cursor: pointer;
-    font-weight: 300;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 20px;
-    color: #46374d;
-    font-size: 14px;
+.postSummaryDiv {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 
@@ -55,7 +39,6 @@ hr {
 
 
 .postDate {
-    font-family: 'Merriweather', serif;
     font-style: italic;
     font-size: 14px;
     font-weight: 300;
@@ -66,6 +49,33 @@ hr {
 
 .postInfo {
     align-items: center;
+
+}
+
+.stardust {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.arrowUp {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #FFE48F;
+    margin-bottom: 5px;
+  }
+
+.arrowDown {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 25px solid #FFE48F;
+    margin-top: 5px;
+}
+
+.tags {
     display: flex;
-    flex-direction: column;
 }
