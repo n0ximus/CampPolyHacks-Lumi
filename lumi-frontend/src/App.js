@@ -5,9 +5,17 @@ import Home from "./pages/Home.jsx"
 import NavBar from "./components/navbar"
 import WritePraise from "./pages/writePost/writePraise";
 import WriteRant from "./pages/writePost/writeRant";
+=======
+import PostPage from "./pages/PostPage.jsx"
+let post =
+  { "body": "hello world i am typing to make this have a new line so we can see what it looks like when you're able to go to new lines and stuff", 
+  "stardust": 10, 
+  "category": ["advice", "lgbtq+"]}
+
+
 
 function App() {
-  document.body.style = 'background: #31334A;';
+  document.body.style = 'background: #31334A'
 
   return (
     <div className="App">
@@ -16,7 +24,8 @@ function App() {
                   <NavBar />
 
                   <Routes>
-                      <Route exact path="/" element={<Home />}>
+                      <Route exact path="/" element={<Home />}> </Route>
+                      <Route exact path="/home" element={<PostPage post = {post}/>}>
                       </Route>
                       <Route exact path="/writePraise" element={<WritePraise />}>
                       </Route>

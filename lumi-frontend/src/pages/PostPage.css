@@ -1,0 +1,99 @@
+.postPageDiv {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.commentRantBlock{
+    width: 50%;
+    display: flex;
+    background-color: #B8CAFF;
+    border-radius: 10px;
+    align-items: left;
+    border: 8px solid #6C83CA;
+}
+
+.postSummaryDiv{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.postSummary {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    color: #46374d;
+    padding: 10px;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: flex;
+}
+
+
+.postDate {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+    color: #46374d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.postInfo {
+    align-items: center;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.stardust {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    padding: 20px;
+}
+
+.arrowUp {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #FFE48F;
+    margin-bottom: 5px;
+  }
+
+.arrowDown {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 25px solid #FFE48F;
+    margin-top: 5px;
+}
+
+.tags {
+    display: flex;
+    margin-top: 15px;
+}
+
+.commentsHeader {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    text-align: left;
+}
+
+.writeCommentInput {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.commentInputDiv {
+    margin-right: 20px;
+}
