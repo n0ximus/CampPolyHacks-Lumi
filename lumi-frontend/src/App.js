@@ -5,6 +5,8 @@ import Home from "./pages/Home.jsx"
 import WritePost from "./pages/writePost/writePost";
 
 function App() {
+  document.body.style = 'background: #31334A;';
+
   return (
     <div className="App">
       <header className="App-header">

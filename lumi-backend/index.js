@@ -5,6 +5,7 @@ app.use(cors());
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const posts = require("./posts");
+const comments = require("./comments");
 
 
 dotenv.config();
@@ -19,8 +20,7 @@ mongoose.connect(process.env.MONGO_URL, {
     .catch((err) => console.log(err));
 
 app.use("/posts", posts);
-
-
+app.use("/comments", comments);
 
 app.use("/", (req, res) => {
     console.log("this is the home")
