@@ -62,34 +62,18 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
-/*
- * gets a comment by id
- * */
-router.get("/:id", async (req, res) => {
-    try {
-        const comment = await Comment.findById(req.params.id);
-        res.status(200).json(comment);
-    } catch (err) {
-        res.status(500).json(err);
-    }
 });
 
 /*
  * gets  all comments (used to render on home page)
  * */
 router.get("/", async (req, res) => {
-    const categoryName = req.query.category;
+    const postID = req.query._id;
     try {
         let comments;
-       if (categoryName) {
-            comments = await Comment.find({
-                categories: {
-                    $in: [categoryName],
-                },
-            });
-        } else {
-            comments = await Comment.find();
-        }
+        if (postID) {
+            posts = await Post.find({ postID });
+        } 
         res.status(200).json(comments);
     } catch (err) {
         res.status(500).json(err);
