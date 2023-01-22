@@ -1,0 +1,9 @@
+.commentMap {
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Merriweather', serif;
+    margin: auto;
+    background-color: #B8CAFF;
+    align-items: center;
+}
