@@ -62,19 +62,19 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
-});
-
 /*
- * gets  all comments (used to render on home page)
+ * gets  all posts 
  * */
-router.get("/", async (req, res) => {
-    const postID = req.query._id;
+router.get("/:id", async (req, res) => {
+    const id = req.params.id;
     try {
-        let comments;
-        if (postID) {
-            posts = await Post.find({ postID });
-        } 
-        res.status(200).json(comments);
+        let posts;
+
+        posts = await Comment.find({
+            post: id,
+        });
+        
+        res.status(200).json(posts);
     } catch (err) {
         res.status(500).json(err);
     }
