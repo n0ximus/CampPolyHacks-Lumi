@@ -4,6 +4,16 @@
     display: flex;
     background-color: #B8CAFF;
     border-radius: 10px;
+    align-items: center;
+}
+
+.blur {
+    display: flex;
+    filter: blur(4px);
+}
+
+.noBlur {
+    display: flex;
 }
 
 .postSummary {
