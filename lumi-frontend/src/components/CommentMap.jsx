@@ -1,5 +1,5 @@
 import "./CommentMap.css"
-import Comment from "./CommentBlock";
+import Comment from "./commentBlock";
 
 export default function CommentMap({ comment }) {
     console.log(comment)

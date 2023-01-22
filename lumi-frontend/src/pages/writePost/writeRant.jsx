@@ -40,7 +40,7 @@ export default function WriteRant() {
                 </div>
                 <form className="writePostForm" onSubmit={handleSubmit}>
 
-                    <textarea type="text" placeholder="write praise" className="writePostInput" autoFocus={true} onChange={e => setDescription(e.target.value)} />
+                    <textarea type="text" placeholder="write rant" className="writePostInput" autoFocus={true} onChange={e => setDescription(e.target.value)} />
 
 
                 <div className="writePostFooter">

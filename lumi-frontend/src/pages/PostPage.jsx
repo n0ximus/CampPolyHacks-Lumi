@@ -1,12 +1,17 @@
-import React, {useState, useEffect, useLocation} from 'react';
+import React, {useState, useEffect} from 'react';
 import './PostPage.css'
 import { Link } from 'react-router-dom';
 import Tag from "../components/Tag";
 import CommentMap from "../components/CommentMap"
 import axios from "axios";
+import { useLocation } from "react-router-dom";
+
+export default function PostPage() {
+    const location = useLocation();
+    const path = location.pathname.split("/")[2]; /* gets the post id */
+    const [post, setPost] = useState({});
 
 
-export default function PostPage({post}) {
     var comments = [{
         post: "id",
         body: "You can do it!",
@@ -18,19 +23,29 @@ export default function PostPage({post}) {
         starDust: 1,
     }]
 
+    useEffect(() => {
+        const getPost = async () => {
+            const res = await axios.get("/posts/" + path);
+            setPost(res.data);
+            console.log(post);
+
+        };
+        getPost();
+    }, [path]);
+
+
     return (
         <div className="postPageDiv">
             <div className="commentRantBlock">
                 <div className="stardust">
-                    <div class="arrowUp"></div>
-                    {post.stardust}
-                    <div class="arrowDown"></div>
+                    <div className="arrowUp"></div>
+                    {post.starDust}
+                    <div className="arrowDown"></div>
                 </div>
                 <div className="postInfo">
                     <div className="tags">
-                    {post.category.map((c) => (
-                        <Tag category={c} />
-                    ))}
+
+
                     </div>
                     <div className="postSummaryDiv">
                         <p className="postSummary">{post.body}</p>
