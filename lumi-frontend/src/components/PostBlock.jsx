@@ -21,7 +21,7 @@ export default function PostBlock({ post }) {
                         <p className="postSummary">{post.body}</p>
                     </div>
                     <div className="commentsButtonDiv">
-                        <Link to="/Home" className="commentsButton"> 
+                        <Link to={`/post/${post._id}`} className="commentsButton"> 
                             See comments 
                         </Link>
                     </div>
