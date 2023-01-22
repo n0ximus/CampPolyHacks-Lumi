@@ -1,0 +1,8 @@
+.postMap {
+    flex: 10;
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    font-family: 'Merriweather', serif;
+    margin: 20px;
+}
